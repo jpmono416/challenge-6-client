@@ -10,7 +10,7 @@ const DisasterListEntry = ({ disaster }) => {
         <Link to={`/disasters/${disaster._id}`} style={{ textDecoration: "none" }}>
             <CustomCard>
                 <Row>
-                    <CustomHeader>Location: {disaster.location}</CustomHeader>
+                    <CustomHeader>Location: <span>{disaster.location}</span></CustomHeader>
                 </Row>
                 <CustomHeader>Description: {disaster.description}</CustomHeader>
                 <CustomHeader>Affected people: {disaster.estimationPeopleAffected}</CustomHeader>
